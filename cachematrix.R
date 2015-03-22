@@ -42,7 +42,8 @@ list(setMat = setMat, getMat=getMat, setInverseMat=setInverseMat,
 }
 
 
-## Write a short comment describing this function
+## The cacheSolve function checks if the inverse matirx is calculated
+## If yes then it prints out that. If not it calculates it.
 
 cacheSolve <- function(x, ...) {
         ## We retrieve the inverse matrix if exists from the 
