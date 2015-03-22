@@ -54,10 +54,12 @@ cacheSolve <- function(x, ...) {
                 return(inv)
         }
         ## if there is not an inverse matrix we retreive the matrix
-        ## from makeCacheMatrix function
+        ## from makeCacheMatrix function using the following
         mat_data  <- x$getMat()
-        print(mat_data)
+        ## we used the retrrieved data to calculate the inverse matrix
         inv       <- solve(mat_data)
+        ## the calculated inverse matrix is then set into the x via:
         x$setInverseMat(inv)
+        ## display on the monitor the inverse matrix
         inv
 }
